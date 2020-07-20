@@ -1,0 +1,6 @@
+/vendor
+/.idea
+composer.json
+composer.lock
+test.html
+init.php
