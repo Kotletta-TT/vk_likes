@@ -3,13 +3,9 @@ require_once 'data.php';
 require_once 'function.php';
 
 session_start();
-if (!empty($_GET['code'])) {
-    $code = $_GET['code'];
-    $response = $oauth->getAccessToken($request_params['client_id'],$request_params['client_secret'],
-        $request_params['redirect_uri'], $code);
-    $access_token = $response['access_token'];
-    $_SESSION['access_token'] = $access_token;
-    if (!empty($response['access_token'])) {
+if (!empty($_GET['access_token'])) {
+    $_SESSION['access_token'] = $_GET['access_token'];
+    if (!empty($_SESSION['access_token'])) {
         header('Location:/likes.php');
         exit;
     }
