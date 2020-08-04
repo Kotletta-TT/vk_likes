@@ -1,0 +1,52 @@
+body {
+
+}
+
+/* Главный блок страницы */
+#main {
+    width: 1000px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* Блок для одного лайка */
+.like-card {
+    display: inline-block;
+    width: 23%;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+    margin: 9px;
+    padding: 0px;
+    float: left;
+}
+
+.like-content {
+    display: block;
+    overflow: hidden;
+    width: 99%;
+    height: 250px;
+    float: left;
+    border: 1px solid black;
+}
+
+.like-ovner {
+    padding-left: 5px;
+    float: left;
+}
+
+.like-control {
+    text-align: center;
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.clear {
+    clear: both;
+}
